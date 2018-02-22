@@ -2096,7 +2096,7 @@ form.submit {
 .product-details p {
     line-height: 1.8;
     color: #848484;
-    font-size: 13px;
+    font-size: initial;
     margin: 8px 0;
 }
 .product-details p strong {
@@ -2164,7 +2164,8 @@ h3.rate {
     padding: 40px 20px;
     background: rgba(1, 161, 133, 0.36);
     margin-left: 15%;
-    margin-right: 0;
+	margin-right: 0;
+	margin-top: 0;
 }
 .interested  h4 {
 	color:#000;
