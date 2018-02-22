@@ -1,20 +1,77 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
-
+<div class="header">
+    <div class="container">
+      <div class="logo">
+        <a [routerLink]="['home']" routerLinkActive="active">
+          <span>Alfa</span>Comercial</a>
+      </div>
+      <div class="header-right">
+        <a class="account" [routerLink]="['/products', 0]" routerLinkActive="active">Products</a>
+        <a class="account" [routerLink]="['aboutus']" routerLinkActive="active">About Us</a>
+        <a class="account" [routerLink]="['contactus']" routerLinkActive="active">Contact Us!</a>
+        <a class="account phone">
+          <i class="ion-android-phone-portrait"></i> +258 846333373</a>
+      </div>
+    </div>
+  </div>
+<router-outlet></router-outlet>
+  <!--footer section start-->
+  <footer>
+    <div class="footer-top">
+      <div class="container">
+        <div class="foo-grids">
+          <div class="col-md-6 footer-grid">
+            <h4 class="footer-head">Who We Are?</h4>
+            <p>
+              Alfa Comercial Limitada is one of the largest specialist and distributors of uniforms, safety footwear,
+              safety work wear, Mining, Hardware, Stationery, Coal sample plastics, Fire Equipment, dust
+              suppressants, lockouts /tag outs and accessories in Southern Africa
+            </p>
+            </div>
+          <div class="col-md-5 col-md-offset-1 footer-grid">
+            <h4 class="footer-head">Contact Us</h4>
+            <span class="hq">Our headquarters</span>
+            <address>
+              <ul class="location">
+                <li>
+                  <span class="glyphicon glyphicon-map-marker"></span>
+                </li>
+                <li>CENTER FOR FINANCIAL ASSISTANCE TO DEPOSED NIGERIAN ROYALTY</li>
+                <div class="clearfix"></div>
+              </ul>
+              <ul class="location">
+                <li>
+                  <span class="glyphicon glyphicon-earphone"></span>
+                </li>
+                <li>+0 561 111 235</li>
+                <div class="clearfix"></div>
+              </ul>
+              <ul class="location">
+                <li>
+                  <span class="glyphicon glyphicon-envelope"></span>
+                </li>
+                <li>
+                  <a href="mailto:info@example.com">mail@example.com</a>
+                </li>
+                <div class="clearfix"></div>
+              </ul>
+            </address>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom text-center">
+      <div class="container">
+        <div class="footer-logo">
+          <a href="index.html">
+            <span>Alfa</span>Comercial</a>
+        </div>
+        <div class="copyrights">
+          <p> © 2018 Alpha Comercial. All Rights Reserved | Website by
+            <a href="mailto:kelvinmuyambo@gmail.com"> kelvinm</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--footer section end-->

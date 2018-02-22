@@ -1,14 +1,67 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Alpha</title>
   <base href="/">
-
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-select.css">
+  <link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
+  <link rel="stylesheet" href="assets/css/flexslider.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="assets/ionicons/css/ionicons.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
+  <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/bootstrap-select.js"></script>
+
+  <script defer src="assets/js/jquery.flexslider.js"></script>
+  <link rel="stylesheet" href="assets/css/flexslider.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+    function runSlider() {
+      $('.flexslider').flexslider({
+        animation: "slide",
+        controlNav: "thumbnails"
+      });
+
+      $("#flexiselDemo3").flexisel({
+        visibleItems: 1,
+        animationSpeed: 1000,
+        autoPlay: true,
+        autoPlaySpeed: 5000,
+        pauseOnHover: true,
+        enableResponsiveBreakpoints: true,
+        responsiveBreakpoints: {
+          portrait: {
+            changePoint: 480,
+            visibleItems: 1
+          },
+          landscape: {
+            changePoint: 640,
+            visibleItems: 1
+          },
+          tablet: {
+            changePoint: 768,
+            visibleItems: 1
+          }
+        }
+      });
+
+    }
+
+    $(window).load(function () {
+      runSlider();
+    });
+  </script>
+  <script type="text/javascript" src="assets/js/jquery.flexisel.js"></script>
 </head>
+
 <body>
+
   <app-root></app-root>
+
 </body>
+
 </html>
