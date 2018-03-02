@@ -1034,7 +1034,6 @@ ul.location li:nth-child(2) {
     color: #979797;
     font-size: 0.95em;
     line-height: 2em;
-    text-transform: lowercase;
     margin: 0;
 }
 .copyrights p,.diff p {
